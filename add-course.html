@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course - Personal Course Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Personal Course Organiser</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="my-courses.html">My Courses</a></li>
+                <li><a href="add-course.html">Add Course</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Add New Course</h1>
+            <form action="#" id="add-course-form" >
+                <div class="form-group">
+                    <label for="course-name">Course Name : </label>
+                    <input type="text" id="course-name" name="course-name" placeholder="Enter course name " required>
+                </div>
+
+                <div class="form-group">
+                    <label for="instructor">Instructor : </label>
+                    <input type="text" id="instructor" name="instructor" placeholder="Enter instructor's name" required>
+                </div>
+                <div class="form-group">
+                    <label for="hours">Credit Hours : </label>
+                    <input type="number" id="hours" name="hours" min="1" max="30" placeholder="e.g., 3" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Notes : </label>
+                    <textarea name="notes" id="notes" rows="4"
+                        placeholder="Enter any specific notes regarding the course..."></textarea>
+                </div>
+
+                <button type="submit">Submit Course</button>
+            </form> 
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Personal Course Organizer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
